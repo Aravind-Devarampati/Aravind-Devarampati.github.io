@@ -132,8 +132,14 @@
         <h3>DRAM Retention Characterization for Hardware-Assisted Oblivious Transfer</h3>
         <div class="tag">LiteX RISC-V SoC | Xilinx ZCU104 | Bare-metal C | FATFS</div>
         <p>
-          Developed bare-metal firmware and retention-testing workflows on a LiteX-based RISC-V SoC to support
+          •Developed bare-metal firmware and retention-testing workflows on a LiteX-based RISC-V SoC to support
           memory-state experiments and hardware-assisted Oblivious Transfer evaluation.
+
+          •Designed and automated DRAM-retention testing by programming deterministic patterns, targeting specific DIMM
+          regions, running controlled delay schedules, and capturing memory snapshots for offline analysis.
+          
+          •Investigated and modified LiteDRAM refresh-control behavior, memory timing parameters, and retention-run orches-
+           tration to create a reproducible experimental platform for long-duration decay analysis.
         </p>
       </div>
 
@@ -141,8 +147,14 @@
         <h3>Electromagnetic Fault Injection on Secure Embedded Systems</h3>
         <div class="tag">Riscure Tools | AES-128 | EMFI | Secure Firmware</div>
         <p>
-          Conducted EMFI experiments using the Riscure platform to characterize hardware faults in secure embedded
+          •Conducted EMFI experiments using the Riscure platform to characterize hardware faults in secure embedded
           targets and evaluate fault-resilient firmware behavior.
+          •Exploited the AES-128 engine on the Riscure Pi˜nata board by inducing and characterizing hardware faults to identify
+           critical execution windows vulnerable to key leakage.
+          •Engineered a fault-resilient firmware stack featuring instruction-level countermeasures, secure exception handling,
+           and tamper-response logic to mitigate the effects of adversarial EM pulses.
+          •Quantified reliability of secure boot and encryption routines under repeated fault injection and developed a threat
+           model to guide future tamper-resistant hardware–software interfaces.
         </p>
       </div>
     </section>
